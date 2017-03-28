@@ -1,8 +1,5 @@
 ## Happy ZhiHu Crawler
-Crawling data from ZhiHu and store them in MySQL database
-
-知乎扒扒乐
-
+Crawling data from ZhiHu and store them in MySQL database.
 
 ![Alt text](zhihu.png "ZhiHu 知乎")
 
