@@ -4,6 +4,9 @@ Crawling data from ZhiHu and store them in MySQL database
 知乎扒扒乐
 
 
+![Alt text](zhihu.png "ZhiHu 知乎")
+
+
 ## References
 [知乎Live全文搜索之完成爬虫](https://mp.weixin.qq.com/s?__biz=MzA3NDk1NjI0OQ==&mid=2247483965&idx=1&sn=0bce11c6e66266058a3a4ef24133a93b&chksm=9f76ae8ba801279d32818434f1f4db8f67247152683eddcad5abca7f361d2d2d299f0f71da7e&mpshare=1&scene=1&srcid=0301z3ZgU4zU9SIyXD39w1op&key=2ef65d64aa785d78eb237e3b0b4b4a760852726190215300a5bcbe6f6e22e0c77f283eb8b9a2f40ccdebdbd2eac021100ca6f2b4e50662c11ef58dfbb9d4234689a4f012a3c98157d6ec088421d688cf&ascene=0&uin=OTMwMjA2Nzgy&devicetype=iMac+MacBookPro12%2C1+OSX+OSX+10.12.3+build(16D32)&version=12020110&nettype=WIFI&fontScale=100&pass_ticket=C35y3sh7BfApVGe1Tj0e%2FrcXPnb%2Bxqsvc8Tm2V1Mh2NA2xGhiMUh6WCtIhpU4AWr)
 
