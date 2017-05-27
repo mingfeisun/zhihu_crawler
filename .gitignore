@@ -91,3 +91,9 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# webstorm index file
+.idea
+
+# node js modules
+node_modules
