@@ -97,3 +97,9 @@ ENV/
 
 # node js modules
 node_modules
+
+# scrapy test
+scrapy_test
+
+# test files
+test
