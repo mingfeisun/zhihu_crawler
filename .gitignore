@@ -103,3 +103,6 @@ scrapy_test
 
 # test files
 test
+
+# captcha.git
+zhihu_crawling/captcha.gif
