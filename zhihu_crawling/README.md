@@ -17,7 +17,8 @@ scrapy zhihu_live
 ```
 
 ## Final Scraped Data
-> Filename: zhihu_live.jl
+> Filename: zhihu_crawling/zhihu_live.jl
+> 
 > Format: json lines
 
 ## Acknowledgement
