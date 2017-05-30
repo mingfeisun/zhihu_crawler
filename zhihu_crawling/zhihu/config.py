@@ -8,10 +8,8 @@ UsersConfig = {
     'password': '123457',
 }
 
-DbConfig = {
-    # db config
-    'user': 'root',
-    'passwd': 'root',
-    'db': 'ZHTrend',
-    'host': '127.0.0.1',
+FileConfig = {
+    "name": "zhihu_live.jl",
+    "mode_new": "w",
+    "mode_append": "a"
 }
