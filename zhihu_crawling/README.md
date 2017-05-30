@@ -1,5 +1,5 @@
 ## Descriptions
-This repo is to scrape data from ZhiHu live: https://www.zhihu.com/lives/hot/monthly
+This repo is to crape data from ZhiHu live: https://www.zhihu.com/lives/hot/monthly
 
 ## How to Use
 * Install scrapy library for Python
@@ -17,8 +17,8 @@ scrapy zhihu_live
 ```
 
 ## Final Scraped Data
-Filename: zhihu_live.jl
-Format: json lines
+> Filename: zhihu_live.jl
+> Format: json lines
 
 ## Acknowledgement
-Some codes are refered from the open project [Scrapy爬虫 - 获取知乎用户数据](https://github.com/ansenhuang/scrapy-zhihu-users).### Descriptions
+Some codes are refered from the open project [Scrapy爬虫 - 获取知乎用户数据](https://github.com/ansenhuang/scrapy-zhihu-users).
