@@ -9,5 +9,10 @@ import scrapy
 
 
 class LiveItem(scrapy.Item):
-    # define the fields for your item here like:
     data = scrapy.Field()
+    type = scrapy.Field() # data type: live
+
+class CommentItem(scrapy.Item):
+    id = scrapy.Field() # live id
+    data = scrapy.Field()
+    type = scrapy.Field() # data type: comment
