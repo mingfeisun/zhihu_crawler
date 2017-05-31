@@ -7,22 +7,23 @@
 import json
 import pandas as pd
 from config import FileConfig
+from scrapy.exceptions import DropItem
 
 class LivePipeline(object):
     def __init__(self):
-        pass
+        self.data = None
 
     def open_spider(self, spider):
-        self.f_out = open(FileConfig["name"], "ra")
+        self.f_out = open(FileConfig["name"])
         self.data = pd.DataFrame(json.loads(line) for line in self.f_out)
 
     def process_item(self, item, spider):
         for each in item["data"]:
-            if not ( each["conv_id"] in self.data["conv_id"].values ):
-                self.f_out.write(json.dumps(each))
-                self.f_out.write("\n")
-
-        return item
+            if each["conv_id"] in self.data.conv_id.values:
+                DropItem("conv_id %s already exists" % each["conv_id"])
+            else:
+                self.f_out.writelines(json.dumps(each) + "\n")
+                self.data.append(each)
 
     def close_spider(self, spider):
         self.f_out.close()
