@@ -86,4 +86,4 @@ ITEM_PIPELINES = {
 #HTTPCACHE_STORAGE='scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 # Extra
-DEPTH_LIMIT=3+10
+DEPTH_LIMIT=100
