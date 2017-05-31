@@ -17,8 +17,15 @@ cd zhihu_crawling
 ```
 * Run the project
 ``` bash
-scrapy zhihu_live
+scrapy crawl zhihu_live
 ```
+* Running interface
+
+![](running.png)
+
+* Stop interface
+
+![](stop.png)
 
 ## Final Scraped Data
 > Filename: zhihu_crawling/zhihu_live.jl
