@@ -120,8 +120,36 @@ class LiveSpider(scrapy.Spider):
 
     def live_comment(self, response):
         json_results = json.loads(response.body)
-        # print "######################################"
-        # print response.meta["id"]
-        # print "######################################"
         yield CommentItem(data=json_results["data"], type="comment", id=response.meta["id"])
 
+        if json_results["paging"]["is_end"] == False:
+            nextPage = json_results["paging"]["next"]
+
+            yield scrapy.Request(
+                url= nextPage,
+                headers= self.relay_headers,
+                meta = {
+                    'proxy': UsersConfig['proxy'],
+                    'from': {
+                        'sign': 'else',
+                        'data': {}
+                    }
+                },
+                callback = None,
+                dont_filter = True
+            )
+
+            yield scrapy.Request(
+                url= nextPage,
+                headers= self.headers,
+                meta = {
+                    'id': response.meta["id"],
+                    'proxy': UsersConfig['proxy'],
+                    'from': {
+                        'sign': 'else',
+                        'data': {}
+                    }
+                },
+                callback = self.live_comment,
+                dont_filter = True
+            )
