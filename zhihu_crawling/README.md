@@ -2,9 +2,13 @@
 This repo is to crape data from ZhiHu live: https://www.zhihu.com/lives/hot/monthly
 
 ## How to Use
-* Install scrapy library for Python
+* Install [scrapy](https://scrapy.org/) library for Python
 ``` python
-pip install scrapy
+sudo pip install scrapy
+```
+* Install [pandas](http://pandas.pydata.org/) library for python
+``` python
+sudo pip install pandas
 ```
 * Clone this repo and change to the scrapy project folder
 ``` bash
