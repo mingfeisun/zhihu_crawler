@@ -63,7 +63,7 @@ COOKIES_DEBUG=False
 # Configure item pipelines
 # See http://scrapy.readthedocs.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
-   'zhihu.pipelines.UserPipeline': 300,
+   'zhihu.pipelines.LivePipeline': 300,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
