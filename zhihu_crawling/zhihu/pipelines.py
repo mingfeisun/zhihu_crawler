@@ -38,20 +38,28 @@ class LivePipeline(object):
                 DropItem("live id %s already exists" % each["id"])
             else:
                 self.live_outfile.writelines(json.dumps(each) + "\n")
-                self.live_data.append(each)
+                self.live_data = self.live_data.append(each, ignore_index = True)
 
     def process_comment_data(self, item):
         if os.path.exists( self.comment_folder + item["id"]):
             comment_outfile = open( self.comment_folder + item["id"])
             comment_data = pd.DataFrame(json.loads(line) for line in comment_outfile)
+            comment_outfile.close()
+
+            comment_outfile = open( self.comment_folder + item["id"], "a")
+
             for each in item["data"]:
                 if each["id"] in comment_data.id.values:
                     DropItem("comment id %s already exists!" % each["id"])
                 else:
                     comment_outfile.writelines(json.dumps(each) + "\n")
-                    comment_data.append(each)
+                    comment_data = comment_data.append(each, ignore_index=True)
+
+            comment_outfile.close()
+
         else:
             comment_outfile = open( self.comment_folder + item["id"], "w")
             for each in item["data"]:
                 comment_outfile.writelines(json.dumps(each) + "\n")
+            comment_outfile.close()
 
