@@ -4,8 +4,8 @@ UsersConfig = {
     'proxy': '',
 
     # 知乎用户名和密码
-    'email': 'mingfei.sun.hk@gmail.com',
-    'password': '123457',
+    'email': 'placeholder', # placeholder
+    'password': 'placeholder', # placeholder
 }
 
 FileConfig = {
