@@ -2,7 +2,7 @@
 Crawling data from ZhiHu Live and store them in json lines format. 
 ![Alt text](zhihu.png "ZhiHu 知乎")
 
-从知乎Live中爬取30天热门数据，包括问题信息，Host信息，金额等。爬取后的数据以json lines的形式保存在zhihu_live.js文件中。爬取数据如下所示：
+从知乎Live中爬取30天热门数据，包括问题信息，Host信息，金额等。爬取后的数据以json lines的形式保存在zhihu_live.jl文件中。爬取数据如下所示：
 
 ![Alt text](data.png "Zhihu Live Json")
 
