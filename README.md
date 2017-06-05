@@ -11,7 +11,9 @@ Crawling data from ZhiHu Live and store them in json lines format.
 ![Alt text](comments.png "Zhihu Livs Comments")
 
 ## Usage 使用方法
-More reference can be found in the file zhihu_crawling/readme.md. 使用方法参见zhihu_crawling/readme.md文件
+Detailed usage can be found in the file zhihu_crawling/readme.md. 
+
+使用方法参见zhihu_crawling/readme.md文件
 
 ## References 参考项目
 
