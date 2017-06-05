@@ -29,7 +29,9 @@ scrapy crawl zhihu_live
 
 ## Final Scraped Data
 > ZhiHu Live data: *zhihu_live.jl* 
+>
 > ZhiHu Live comments: *comments/*
+>
 > Format: json lines
 
 ## Acknowledgement
