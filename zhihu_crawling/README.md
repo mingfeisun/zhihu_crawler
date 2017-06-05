@@ -1,5 +1,5 @@
 ## Descriptions
-This repo is to crape data from ZhiHu live: https://www.zhihu.com/lives/hot/monthly
+This repo is to crawl data from ZhiHu live: https://www.zhihu.com/lives/hot/monthly
 
 ## How to Use
 * Install [scrapy](https://scrapy.org/) library for Python
